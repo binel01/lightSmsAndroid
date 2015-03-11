@@ -7,8 +7,6 @@
   * Everybody can give suggestions about one issues finish or not.
   * can add new members.
 
-# Everybody can give suggestions about one issues finish or not.
-
 # lightSmsAndroid
 just one small android app to send light sms.
 
