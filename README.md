@@ -1,6 +1,11 @@
-# "mvworkshop" is just a set of repositories who help improve ourselves with others persons.
+# "mvworkshop" what it is ??
+  it is just a set of repositories who help improve ourselves with others persons.
 
-# One person can start one project, small or big, give details of projects and issues continually.
+# what can members do ?
+  * members can start one project(regardless of technologies and programming language), small or big, give details of projects and issues continually.
+  * take issue(s) and do it.
+  * Everybody can give suggestions about one issues finish or not.
+  * can add new members.
 
 # Everybody can give suggestions about one issues finish or not.
 
