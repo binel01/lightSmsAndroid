@@ -1,3 +1,9 @@
+# "mvworkshop" is just a set of repositories who help improve ourselves with others persons.
+
+# One person can start one project, small or big, give details of projects and issues continually.
+
+# Everybody can give suggestions about one issues finish or not.
+
 # lightSmsAndroid
 just one small android app to send light sms.
 
@@ -5,6 +11,9 @@ just one small android app to send light sms.
  
  * Font
  * Color
+ * Background
+ * Border on Paragraph
+ * Footer
  * Font Size ... etc 
 
 # About Initial code
@@ -12,9 +21,13 @@ just one small android app to send light sms.
   * One Activity : MainActivity.java : 
     This activity has one fragment, the fragment use to take user inputs(number and text) to send sms.
 
-  * One utility class : SendSMS?=.java :
+  * One utility class : SendSMS.java :
     Who wrap utility class and method to send sms to one number.
 
 # Recommandations to Run Project :
   * firstly you should install "Android Studio", it's knowing that there is many others alternalives abour.
   * you can run it with a physique device which has android Api level 13 or greater, but the target is Api level 21
+  
+# Where are task of this projetcs :
+  * Every time take a look on issues on the left side
+  * And all comments of issues
