@@ -35,14 +35,13 @@
         android:inputType="textMultiLine"
         android:ems="10"
         android:id="@+id/textSms"
-        android:layout_below="@+id/phoneNumber"
-        android:layout_marginTop="64dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:text="textSms"
-        android:layout_above="@+id/sendSms" />
+        android:layout_above="@+id/sendSms"
+        android:layout_below="@+id/phoneNumber" />
 
     <Button
         android:layout_width="wrap_content"

@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">SmsApp</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">!!!!!!!! Just a Simple Sms Application from club !!!!!!!!</string>
+    <string name="hello_worldTwo">Simple Sms Application</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="labelGI">the logo of Computers Engeneering club</string>
+    <string name="version">Version 0.1</string>
 </resources>
