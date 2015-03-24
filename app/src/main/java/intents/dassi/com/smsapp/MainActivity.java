@@ -4,6 +4,8 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
+import android.text.method.DigitsKeyListener;
+import android.text.method.MetaKeyKeyListener;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -91,9 +93,11 @@ public class MainActivity extends ActionBarActivity {
                             "anim id est laborum.");
                             */
 
+            // just permit to type integer number unsigned and not decimal for the destination Number
+            DigitsKeyListener digitSms = DigitsKeyListener.getInstance(false, false);
+            textNumber.setKeyListener(digitSms);
 
-
-
+            //MetaKeyKeyListener digitMetaSms = MetaKeyKeyListener.
 
             sendButton.setOnClickListener(new View.OnClickListener() {
                 @Override
