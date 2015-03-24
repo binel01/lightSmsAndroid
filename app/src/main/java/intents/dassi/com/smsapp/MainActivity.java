@@ -1,5 +1,6 @@
 package intents.dassi.com.smsapp;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
@@ -76,6 +77,7 @@ public class MainActivity extends ActionBarActivity {
             sendButton = (Button)rootView.findViewById(R.id.sendSms);
 
 
+            /*
             textNumber.setText("5554");
             textSms.setText(// This is standard lorem-ipsum text, do not bother
                     // trying to wrap it, there's about 500 characters...
@@ -87,6 +89,7 @@ public class MainActivity extends ActionBarActivity {
                             " velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint " +
                             "occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit " +
                             "anim id est laborum.");
+                            */
 
 
 
@@ -95,17 +98,55 @@ public class MainActivity extends ActionBarActivity {
             sendButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    boolean success = mSender.sendSMSMessage(textNumber.getText().toString(), textSms.getText().toString());
 
-                    Toast.makeText(v.getContext(), "Message sent " + (
-                                    success ? "successfully" : "unsuccessfully"),
-                            Toast.LENGTH_SHORT).show();
+                    Context context = v.getContext();
+                    int duration = Toast.LENGTH_LONG;
+                    boolean success = false;
+
+                    CharSequence text = "Message sent ";
+                    String exceptionString = "Errors on input data";
+                    boolean exceptionOccured = false;
+
+
+                    if(correctInputs()) {
+
+
+                        try {
+                            success = mSender.sendSMSMessage(textNumber.getText().toString(), textSms.getText().toString());
+
+                        } catch (IllegalArgumentException e) {
+                            e.printStackTrace();
+                            exceptionOccured = true;
+                        }
+
+                        if(exceptionOccured)
+                            text = "Correct Inputs values, " + exceptionString;
+                        else
+                            text = "Correct Inputs values, " + text + (success ? "successfully" : "unsuccessfully");
+
+                    } else {
+                        text = "Incorrect Inputs values, " + text + (success ? "successfully" : "unsuccessfully");
+                    }
+
+                    Toast smsToast = Toast.makeText(context, text, duration);
+                    smsToast.show();
                 }
 
             });
 
 
             return rootView;
+        }
+
+        public boolean correctInputs(){
+
+            if( textNumber == null || textNumber.equals("") )
+                return false;
+
+            if (textSms == null)
+                return false;
+
+            return true;
         }
     }
 }
