@@ -1,4 +1,4 @@
-# "mvworkshop" what it is ??
+# "mvworkshop" what is it ??
   it is just a set of repositories who help improve ourselves with others persons.
 
 # what can members do ?
@@ -28,8 +28,9 @@ just one small android app to send light sms.
     Who wrap utility class and method to send sms to one number.
 
 # Recommandations to Run Project :
-  * firstly you should install "Android Studio", it's knowing that there is many others alternalives abour.
+  * firstly you should install "Android Studio", it's knowing that there is many others alternalives about.
   * you can run it with a physique device which has android Api level 13 or greater, but the target is Api level 21
+  * the default number of the first android emulator is " 5554 ", you can use this number to send SMS in development environment, or look at the left corner of your emulator to see the number to use instead.
   
 # Where are task of this projetcs :
   * Every time take a look on issues on the left side
